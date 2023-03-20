@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="topnav">
+        <button id="again">Again!</button>
+        <p class="range">(Between 1 and 100)</p>
+    </div>
+    <h1 class="heading">Guess My Number !</h1>
+    <hr class="line">
+    <div class="shownum">
+        <p id="actnum"></p>
+    </div>
+    <div class="playarea">
+        <div class="inputarea">
+            <form action="#">
+                <input type="number" placeholder="0" id="usernum" max="100" min="0">
+                <button type="submit" id="checka">Check</button>
+            </form>
+        </div>
+        <div class="stats">
+            <p class="statsrows" id ="happens" class = "animated"><span id="closeness"></span></p>
+            <p class="statsrows">Score : <span id="score"></span></p>
+            <p class="statsrows">highest Score : <span id="highest">0</span></p>
+        </div>
+    </div>
+    <div class = "test"></div>
+
+    <hr class="line">
+    <div class="shownum timebox">
+        <p id="time"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
